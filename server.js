@@ -12,6 +12,14 @@ let rollbar = new Rollbar({
 const students = [];
 const app = express();
 
+app.get('api/spongebob', (req, res) => {
+    try {
+        students();
+    } catch (error) {
+        rollbar.error('error');
+    }
+})
+
 app.use(express.json());
 app.use('/style', express.static('./public/styles.css'));
 
