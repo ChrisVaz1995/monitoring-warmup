@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 // const { allowedNodeEnvironmentFlags } = require('process');
-const Rollbar = requires('rollbar');
+const Rollbar = require('rollbar');
 
 let rollbar = new Rollbar({
     accesstoken: 'b81598868bba40ef96a115d64d852435',
